@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">tictactoe</string>
+    <string name="todo">TODO</string>
+    <string name="music">music</string>
+    <string name="textview">TextView</string>
+    <string name="string_textview" />
+    <string name="new_game">New Game</string>
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vanshul.tictactoe.MainActivity">
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="368dp"
+        android:layout_height="368dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/grid"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:saveEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:onClick="clk"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="35dp"
+            android:onClick="clk"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="35dp"
+            android:onClick="clk"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="55dp"
+            android:onClick="clk"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="55dp"
+            android:onClick="clk"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="52dp"
+            android:onClick="clk"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="51dp"
+            android:onClick="clk"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="50dp"
+            android:onClick="clk"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="51dp"
+            android:onClick="clk"
+            android:tag="8" />
+
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="5dp"
+        android:onClick="rst"
+        android:text="@string/new_game"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="331dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/string_textview"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/grid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:checked="true"
+        android:onClick="Pause"
+        android:text="@string/music"
+        app:layout_constraintBottom_toTopOf="@+id/grid"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:clickable="true" android:focusable="true" />
+
+</android.support.constraint.ConstraintLayout>
